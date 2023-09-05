@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Ricky Stoll</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ricky Stoll</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/newprofilepic.png" alt="Ricky Stoll profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p13">Hello, I'm</p>
+            <h1 class="title">Ricky Stoll</h1>
+            <p class="section__text__p2">Web Developer</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/ResumeUpdated.pdf')">
+                    Resume
+                </button>
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'">
+                        Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedinimg.png" 
+                    alt="My LinkedIn Profile" 
+                    class="icon" 
+                    onclick="location.href='https://linkedin.com/in/ricky-stoll-25b190213'"/>
+                <img src="./assets/github.png" 
+                    alt="My Github Profile" 
+                    class="icon" 
+                    onclick="location.href='https://github.iu.edu/rwstoll'"/>    
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/iu-icon.png" 
+                            alt="educaion icon" 
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>B.A. Computer Science <br>Indiana University - Bloomington</p>
+                
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experienceimg.png" 
+                            alt="experience icon" 
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>1+ years <br>Fullstack Development</p>
+                    </div>
+                </div>
+    
+                <div class="text-container">
+                    <h1 class="skills-title">Background</h1>
+
+                    <div class="about-containers">
+                        <p style="text-indent: 25px;">
+                            During my time at Indiana University, I immersed myself in the world of computer science, 
+                            acquiring a strong foundation in programming, algorithms, and software development. 
+                            This educational journey was not just about grasping theoretical knowledge; 
+                            it was a hands-on experience that allowed me to work on exciting projects, 
+                            collaborating with classmates and mentors who fueled my passion further. 
+                            I believe in the power of continuous learning and strive to stay up-to-date with the latest 
+                            technologies and industry trends, attending workshops, and participating in online forums 
+                            to expand my expertise.
+                        </p>
+                    </div>
+
+                    <div class="about-containers">
+                        <p style="text-indent: 25px;">
+                            I am actively seeking opportunities to work on exciting projects and contribute to the success 
+                            of dynamic organizations. As a passionate and dedicated developer, I am eager to collaborate 
+                            with talented teams where I can not only share my expertise but also learn from others' experiences. 
+                            I believe in the power of teamwork and aim to foster an environment where diverse perspectives 
+                            combine to create innovative solutions that will drive the project forward. Embracing challenges that 
+                            stretch my abilities is how I envision personal and professional growth, and I am ready to embrace 
+                            every chance to make a meaningful impact on both my team and any project as a whole.
+                        </p>
+                    </div>
+                    <h1 class="skills-title">Interests</h1>
+                    <div class="about-containers">
+                        <p style="text-indent: 25px;">
+                            Aside from my career for computer science, I'm a well-rounded person with a variety of interests that 
+                            add value to both my personal and professional life. Striking a healthy work-life balance is important 
+                            to me, so I make sure to include regular workouts to stay energized and focused. Playing the piano is also a 
+                            passion of mine, offering a outlet and a way to unwind from the demands of the day. 
+                            It's taught me patience, attention to detail, and the ability to work simultaneously.
+                            Above all, my family and friends mean the world to me. Spending quality time with them not 
+                            only helps my soul but also strengthens my interpersonal skills, which I believe are essential 
+                            for any successful work environment. These diverse interests shape me into a more well-rounded individual, 
+                            bringing dedication, adaptability, and a collaborative spirit to the table. I truly believe that a balanced 
+                            lifestyle enhances my performance, making me a valuable and fulfilled team member for any employer seeking someone 
+                            driven and eager to contribute positively.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+                src="./assets/arrow.png" 
+                alt="arrow icon" 
+                class="icon arrow" 
+                onclick="location.href='./#experience'"
+                />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/htmlnew.png" 
+                                alt="Experience Icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/css.png" 
+                                alt="Experience Icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/pngwing.com.png" 
+                                alt="Experience Icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/typescript.png" 
+                                alt="Experience Icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/react.png" 
+                                alt="Experience Icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>React</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/nodejs.png" 
+                                alt="Experience Icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets//postgresql.png" 
+                                alt="Experience Icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/python.png" 
+                                alt="Experience Icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/php.png" 
+                                alt="Experience Icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/java.png" 
+                                alt="Experience Icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/git.png" 
+                                alt="Experience Icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="details-container">
+            <h2 class="experience-sub-title">Additional Experience in:</h2>
+                    <div class="article-container">
+                        <h3>C, C++, Android Development, Dbeaver, Postman, Docker, and more</h3>
+                    </div>
+        </div>
+        <img 
+                src="./assets/arrow.png" 
+                alt="arrow icon" 
+                class="icon arrow" 
+                onclick="location.href='./#projects'"
+                />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                        src="./assets/project-1.png" 
+                        alt="project 1" 
+                        class="project-img"
+                        />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                        src="./assets/project-2.png" 
+                        alt="project 2" 
+                        class="project-img"
+                        />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                        src="./assets/project-3.png" 
+                        alt="project 3" 
+                        class="project-img"
+                        />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">
+                        Live Demo
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+                src="./assets/arrow.png" 
+                alt="arrow icon" 
+                class="icon arrow" 
+                onclick="location.href='./#contact'"
+                />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:examplemail@gmail.com">stollricky@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedinimg.png" alt="linkedin icon" class="icon contact-icon"
+                />
+                <p><a href="https://linkedin.com/in/ricky-stoll-25b190213">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Richard Stoll. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
